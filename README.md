@@ -3,31 +3,56 @@
 Bienvenido! Este proyecto es una aplicación desarrollada para una simulación de un chat en vivo, con autenticación. Sigue los pasos a continuación para configurar y ejecutar el proyecto en tu entorno local.
 
 
-## Instrucciones de Configuración
+# Instrucciones de Configuración
 
-1. Clonar el repositorio
-    git clone [URL_DEL_REPOSITORIO]
+## 1. Clonar el repositorio
 
-2. Navega a la carpeta client:
-    cd client
+```
+git clone [URL_DEL_REPOSITORIO]
+```
 
-3. Instala las dependencias:
-    npm install
+## 2. Navega a la carpeta client:
 
-4. Navega a la carpeta server
-    cd ../server
+```
+cd client
+```
 
-5. Instalar las dependencias:
-    npm install
+## 3. Instala las dependencias:
 
-6. Configurar la base de datos:
-    6.1 Abre el archivo index.js ubicado en la carpeta server.
-    6.2 Busca la variable url y reemplázala con la dirección local de tu base de datos.
+```
+npm install
+```
 
-    let url = "TU_URL_LOCAL_DE_BASE_DE_DATOS"
+## 4. Navega a la carpeta server
 
-7. Ejecutar el proyecto (SERVER):
-    npm run dev
+```
+cd ../server
+```
 
-8. Ejercutar el proyecto (CLIENT):
-    npm start
+## 5. Instalar las dependencias:
+
+```
+npm install
+```
+
+## 6. Configurar la base de datos:
+
+6.1 Abre el archivo index.js ubicado en la carpeta server.
+
+6.2 Busca la variable url y reemplázala con la dirección local de tu base de datos.
+
+```
+let url = "TU_URL_LOCAL_DE_BASE_DE_DATOS"
+```
+
+## 7. Ejecutar el proyecto (SERVER):
+
+```
+npm run dev
+```
+
+## 8. Ejercutar el proyecto (CLIENT):
+
+```
+npm start
+```
