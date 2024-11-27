@@ -11,7 +11,7 @@ function RegisterUser() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const { SingUp, SingIn, isAuthenticated, Errors, reloginverifyToken } =
+  const { SingUp, SingIn, isAuthenticated, Errors, reLoginverifyToken } =
     useAuth();
 
   const [formState, setformState] = useState(false);
@@ -37,9 +37,9 @@ function RegisterUser() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      reloginverifyToken();
+      reLoginverifyToken();
     }
-  }, [reloginverifyToken]);
+  }, [reLoginverifyToken]);
 
   const handleNavigation = useCallback(() => {
     if (isAuthenticated) {
