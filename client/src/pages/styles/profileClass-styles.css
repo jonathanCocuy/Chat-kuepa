@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial" !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ContainerVideoAndChat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.App {
+  background-color: #394b63;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 100px;
+  align-items: center;
+  height: 100vh !important;
+}
+
+.ContainerTitleLogOut {
+  width: 100%;
+  height: 80px;
+  max-width: 2017px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-size: 45px;
+  color: aliceblue;
+  font-family: cursive;
+}
+
+.logOut {
+  width: 150px;
+  height: 40px;
+  border-radius: 26px;
+  border: none;
+  background-color: #62d5c4;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+.AppVideo {
+  width: 600px;
+  background-color: aquamarine;
+  border-radius: 15px;
+}
+
+.Chat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ChatBody {
+  width: 300px;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #62d5c4;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.InputsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.NikNameInput {
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.MessageInput {
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.ContainerButtonInput {
+  display: flex;
+  gap: 20px;
+}
+
+.ButtonName {
+  width: 150px;
+  height: 40px;
+  border-radius: 26px;
+  border: none;
+  background-color: #62d5c4;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+.ContainerMessages {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+
+.NewMessage {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.MessageYOU {
+  width: 100px;
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  align-items: center;
+  width: auto;
+  background-color: #394b63;
+  color: beige;
+  border-radius: 15px;
+}
+
+.Messageother {
+  display: flex;
+  justify-content: start;
+  padding: 20px;
+  align-items: center;
+  width: auto;
+  background-color: #d191b7;
+  border-radius: 15px;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 1112px) {
+  .ContainerVideoAndChat {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  .ContainerVideoAndChat {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1018px) {
+  .App {
+    height: 100%;
+  }
+  .ContainerVideoAndChat {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .ChatBody {
+    width: 550px;
+  }
+  .MessageInput {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .AppVideo {
+    width: 400px;
+  }
+  .ChatBody {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Chat {
+    align-items: center;
+  }
+  .AppVideo {
+    width: 300px;
+  }
+  .ChatBody {
+    width: 250px;
+  }
+  .ContainerButtonInput {
+    justify-content: center;
+    align-items: center;
+  }
+  .MessageInput {
+    width: 40%;
+  }
+}
+
+@media screen and (max-height: 713px) {
+  .App {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-height: 680px) {
+  .App {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-height: 631px) {
+  .App {
+    gap: 0px;
+  }
+}
