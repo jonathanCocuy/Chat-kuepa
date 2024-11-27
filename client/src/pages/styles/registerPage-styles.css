@@ -23,7 +23,7 @@
 
 .ImageText {
   padding-top: 50px;
-  font-size: 64px;
+  font-size: 80px;
   font-family: cursive;
   color: aliceblue;
   text-align: center;
@@ -41,8 +41,7 @@ p {
 .ContainerForm {
   display: flex;
   flex-direction: column;
-
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 50px;
   background-color: #394b63;
@@ -53,7 +52,7 @@ p {
 .containeButtonsRegiter {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
@@ -68,6 +67,7 @@ p {
   color: aliceblue;
   border: none;
   cursor: pointer;
+  font-size: 22px;
 }
 
 .ButtonSingIn {
@@ -80,14 +80,15 @@ p {
   color: aliceblue;
   border: none;
   cursor: pointer;
+  font-size: 22px;
 }
 
 .ButtonSingUp:hover {
-  background-color: #62d5c4;
+  background-color: #1d8209;
 }
 
 .ButtonSingIn:hover {
-  background-color: #62d5c4;
+  background-color: #1d8209;
 }
 
 .ButtonSelectedButtonSingUp {
@@ -95,10 +96,11 @@ p {
   padding: 8px 12px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-color: #62d5c4;
+  background-color: #48B931;
   font-family: cursive;
   color: aliceblue;
   border: none;
+  font-size: 22px;
 }
 
 .ButtonSelectedButtonSingIn {
@@ -106,22 +108,27 @@ p {
   padding: 8px 12px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #62d5c4;
+  background-color: #48B931;
   font-family: cursive;
   color: aliceblue;
   border: none;
+  font-size: 22px;
 }
 
 .FormContain {
-  width: 50%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  gap: 50px;
-  background: #62d5c4;
-  padding: 50px;
+  align-items: center;
+  gap: 30px;
+  background: #fff;
+  padding: 30px;
   border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 35px 9px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 35px 9px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 35px 9px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 
 .ErrorPost {
@@ -132,37 +139,17 @@ p {
   width: 100%;
 }
 
-.usernameInput {
+.campInput {
   width: 100%;
-  height: 40px;
+  height: 30px;
   background-color: #394b63;
-  color: aliceblue;
   border: none;
   outline: none;
   border-bottom: 1px aliceblue solid;
-  font-size: 20px;
-}
-
-.emailInput {
-  width: 100%;
-  height: 40px;
-  background-color: #394b63;
-  color: aliceblue;
-  border: none;
-  outline: none;
-  border-bottom: 1px aliceblue solid;
-  font-size: 20px;
-}
-
-.passwordInput {
-  width: 100%;
-  height: 40px;
-  background-color: #394b63;
-  color: aliceblue;
-  border: none;
-  outline: none;
-  border-bottom: 1px aliceblue solid;
-  font-size: 20px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  background: lightgray;
 }
 
 .userNameText {
@@ -178,13 +165,22 @@ p {
 .ButtonSingUpSend {
   width: 150px;
   height: 40px;
-  border-radius: 26px;
+  border-radius: 8px;
   border: none;
-  background-color: #62d5c4;
+  background-color: #48B931;
   color: aliceblue;
   font-weight: bold;
   font-family: cursive;
   cursor: pointer;
+  font-size: 18px;
+  
+}
+
+.ButtonSingUpSend:hover {
+  background-color: #1d8209;
+  transform: scale(1.03);
+  transition: 0.5s;
+  box-shadow: 0px 0px 35px 4px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 464px) {

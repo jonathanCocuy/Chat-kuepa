@@ -55,7 +55,7 @@ function RegisterUser() {
     <div className="ContainerFromRegisterImage">
       <div className="ContainerForm">
         <p className="ImageText">Bienvenido!</p>
-        <p className="">Inicia sesión para acceder a tu clase</p>
+        <p className="">Inicia sesión o registrate para obtener mucho conocimiento</p>
         <div className="containeButtonsRegiter">
           <button
             onClick={onSubmitSingUp}
@@ -64,7 +64,7 @@ function RegisterUser() {
             }
             type="submit"
           >
-            Sing Up
+            Registrarse
           </button>
           <button
             onClick={onSubmitSingIn}
@@ -73,7 +73,7 @@ function RegisterUser() {
             }
             type="submit"
           >
-            Sing In
+            Iniciar Sesión
           </button>
         </div>
 
@@ -85,45 +85,42 @@ function RegisterUser() {
           ))}
           {!formState ? (
             <div className="containinputText">
-              <p className="userNameText">UserName</p>
               <input
-                placeholder="Enter your Name"
-                className="usernameInput"
+                placeholder="Ingresa tu usuario"
+                className="campInput"
                 type="text"
                 {...register("userName", { required: true })}
               />
               {errors.userName && (
-                <p className="errorData">UserName is Required</p>
+                <p className="errorData">Usuario es obligatorio</p>
               )}
             </div>
           ) : null}
 
           <div className="containinputText">
-            <p className="userNameText">E-mail</p>
             <input
-              placeholder="Enter your Email"
-              className="emailInput"
+              placeholder="Ingresa tu email"
+              className="campInput"
               type="email"
               {...register("email", { required: true })}
             />
-            {errors.email && <p className="errorData">Email is Required</p>}
+            {errors.email && <p className="errorData">Correo es obligatorio</p>}
           </div>
 
           <div className="containinputText">
-            <p className="userNameText">Password</p>
             <input
-              placeholder=". . . . . ."
-              className="passwordInput"
+              placeholder="Ingresa tu contraseña"
+              className="campInput"
               type="password"
               {...register("password", { required: true })}
             />
             {errors.password && (
-              <p className="errorData">Password is Required</p>
+              <p className="errorData">Contraseña es obligatoria</p>
             )}
           </div>
 
           <button className="ButtonSingUpSend" type="submit">
-            {!formState ? "Sing Up" : "Sing In"}
+            {!formState ? "Ingresar" : "Ingresar"}
           </button>
         </form>
       </div>

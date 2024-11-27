@@ -3,6 +3,7 @@ import io from "socket.io-client";
 import ReactPlayer from "react-player";
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
+import sendImage from "../images/enviar.png";
 
 import "./styles/profileClass-styles.css";
 
@@ -75,24 +76,28 @@ function ProfileClass() {
   return (
     <div className="App">
       <div className="ContainerTitleLogOut">
-        <div className="title">ChatSocket</div>
+        
 
         <button onClick={() => LogOut()} className="logOut">
-          LogOut
+          Cerrar Sesión
         </button>
       </div>
+
       <div className="ContainerVideoAndChat">
-        <div className="AppVideo">
+        <div className="AppVideo ">
+      <div className="title">Bienvenido de nuevo</div>
           <ReactPlayer
             controls={true}
             muted
             playing
-            width={"auto"}
+            height={"500px"}
+            width={"700px"}
             loop
             url="https://www.youtube.com/watch?v=Z6GGAQOMX8c"
           />
         </div>
-        <div className="=ContainerForm">
+        <div className="ContainerForm_">
+          <p style={{ textAlign: "center", width: "450px"}}>Chat en vivo, para que respondan todas las preguntas que tienes</p>
           <div className="Chat">
             <div className="ChatBody">
               <div className="ContainerMessages">
@@ -110,8 +115,19 @@ function ProfileClass() {
                     </div>
                   ))}
                 </div>
-
-                <small>... Mensajes Guardados ...</small>
+                <div style={{ display: "Flex", justifyContent: "center" }}>
+                  <small
+                    style={{
+                      textAlign: "center",
+                      background: "#000",
+                      padding: "16px",
+                      color: "#fff",
+                      borderRadius: "16px",
+                    }}
+                  >
+                    ↑ Mensajes Guardados
+                  </small>
+                </div>
 
                 {PreviewMessages?.map((message, index) => (
                   <div
@@ -135,11 +151,13 @@ function ProfileClass() {
                     onChange={(e) => setMessage(e.target.value)}
                     type="text"
                     className="MessageInput"
-                    placeholder="message..."
+                    placeholder="Escribe tu mensaje..."
                     id="nickname"
                     value={Message}
                   />
-                  <button className="ButtonName">Enviar</button>
+                  <button className="ButtonName">
+                    <img src={sendImage} alt="send" width={20}/>
+                  </button>
                 </div>
               </form>
             </div>
